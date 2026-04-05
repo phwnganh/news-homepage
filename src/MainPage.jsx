@@ -1,9 +1,15 @@
-import HeaderSection from "./components/HeaderSection/HeaderSection.jsx";
+import HeaderSection from "./components/HeaderSection/index.jsx";
+import MainSection from "./components/MainSection/MainSection.jsx";
+import FooterSection from "./components/FooterSection/FooterSection.jsx";
 
 const MainPage = () => {
     return (
         <div className={"max-w-278 mx-auto min-h-screen"}>
-            <HeaderSection/>
+            <div className={"flex flex-col gap-16"}>
+                <HeaderSection/>
+                <MainSection/>
+                <FooterSection/>
+            </div>
         </div>
     );
 };
