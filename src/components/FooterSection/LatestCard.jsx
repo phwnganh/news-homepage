@@ -7,7 +7,7 @@ const LatestCard = ({img, numberOfCard, title, description}) => {
             </div>
             <div className={"flex flex-col gap-2 min-w-0"}>
                 <h1 className={"text-preset-3 text-red-500 leading-preset-3 font-preset-3"}>{numberOfCard}</h1>
-                <h2 className={"text-navy-950 text-preset-5 leading-preset-5 font-preset-5"}>{title}</h2>
+                <h2 className={"text-navy-950 text-preset-5 leading-preset-5 font-preset-5 hover:text-red-500 cursor-pointer"}>{title}</h2>
                 <p className={"text-navy-600 text-preset-6 leading-preset-6"}>{description}</p>
             </div>
         </section>
