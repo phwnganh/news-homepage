@@ -1,5 +1,5 @@
 import HeaderSection from "./components/HeaderSection/index.jsx";
-import MainSection from "./components/MainSection/MainSection.jsx";
+import MainSection from "./components/MainSection/index.jsx";
 import FooterSection from "./components/FooterSection/FooterSection.jsx";
 
 const MainPage = () => {

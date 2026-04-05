@@ -21,7 +21,7 @@ const SidebarSection = () => {
             <div className={"flex flex-col gap-8"}>
                 <h1 className={"text-gold-400 text-preset-3 font-preset-3 leading-preset-3"}>New</h1>
                 {PARTICLEBOARD.map((item, index) => (
-                        <SidebarArticleCard key={index} title={item.title} description={item.description} />
+                        <SidebarArticleCard key={index} title={item.title} description={item.description} isLast={index === PARTICLEBOARD.length - 1} />
                 ))}
 
             </div>
