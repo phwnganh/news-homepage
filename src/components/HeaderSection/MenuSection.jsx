@@ -2,7 +2,7 @@
 const MenuSection = () => {
     return (
         <nav role={"menu"}>
-            <ul role={"list"} className={"flex items-center gap-10"}>
+            <ul role={"list"} className={"md:flex hidden items-center gap-10"}>
                 <li className={"text-preset-6 leading-preset-6 text-navy-600"}>Home</li>
                 <li className={"text-preset-6 leading-preset-6 text-navy-600"}>New</li>
                 <li className={"text-preset-6 leading-preset-6 text-navy-600"}>Popular</li>

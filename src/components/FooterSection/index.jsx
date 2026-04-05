@@ -19,7 +19,7 @@ const FooterSection = () => {
         }
     ]
     return (
-        <footer className={"flex gap-10"}>
+        <footer className={"flex flex-col md:flex-row gap-10"}>
             {LATESTCARDITEM.map((item, index) =>
             <LatestCard key={index} img={item.img} numberOfCard={`0${index + 1}`} title={item.title} description={item.description} />)}
         </footer>

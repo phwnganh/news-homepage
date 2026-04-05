@@ -4,7 +4,7 @@ import SidebarSection from "./SidebarSection/index.jsx";
 
 const MainSection = () => {
     return (
-        <main className={"flex gap-8"}>
+        <main className={"flex flex-col md:flex-row gap-8"}>
             <div className={"flex-2"}>
                 <HeroSection/>
             </div>
