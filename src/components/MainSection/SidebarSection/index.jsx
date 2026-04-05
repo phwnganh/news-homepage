@@ -4,15 +4,21 @@ const SidebarSection = () => {
     const PARTICLEBOARD = [
         {
             title: "Hydrogen VS Electric Cars",
-            description: "Will hydrogen-fueled cars ever catch up to EVs?"
+            aria_title: "Hydrogen-VS-Electric-Cars",
+            description: "Will hydrogen-fueled cars ever catch up to EVs?",
+            aria_description: "Will-hydrogen-fueled-cars-ever-catch-up-to-EVs?"
         },
         {
             title: "The Downsides of AI Artistry",
-            description: "What are the possible adverse effects of on-demand AI image generation?"
+            aria_title: "The-Downsides-of-AI-Artistry",
+            description: "What are the possible adverse effects of on-demand AI image generation?",
+            aria_description: "What-are-the-possible-adverse-effects-of-on-demand-AI-image-generation?",
         },
         {
             title: "Is VC Funding Drying Up?",
-            description: "Private funding by VC firms is down 50% YOY. We take a look at what that means."
+            aria_title: "Is-VC-Funding-Drying-Up?",
+            description: "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
+            aria_description: "Private-funding-by-VC-firms-is-down-50%-YOY-We-take-a-look-at-what-that-means."
         }
     ]
 
@@ -21,7 +27,7 @@ const SidebarSection = () => {
             <div className={"flex flex-col gap-8"}>
                 <h1 className={"text-gold-400 text-preset-3 font-preset-3 leading-preset-3"}>New</h1>
                 {PARTICLEBOARD.map((item, index) => (
-                        <SidebarArticleCard key={index} title={item.title} description={item.description} isLast={index === PARTICLEBOARD.length - 1} />
+                        <SidebarArticleCard key={index} title={item.title} aria_title={item.aria_title} aria_description={item.aria_description} description={item.description} isLast={index === PARTICLEBOARD.length - 1} />
                 ))}
 
             </div>
