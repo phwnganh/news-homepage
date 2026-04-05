@@ -21,7 +21,7 @@ const HeaderSection = () => {
                 <img src={HamburgerIcon} alt={"hamburger-icon"}/>
             </button>
                 {openMenuDrawer &&
-                <div aria-live={"polite"} className={"fixed inset-0 z-50 flex justify-end"}>
+                <div aria-live={"polite"} className={"fixed inset-0 z-50"}>
                     <div className={"absolute inset-0 bg-[#979797] opacity-50 transition-opacity duration-300"}></div>
                     <MenuDrawer onCloseMenuDrawer={handleCloseMenuDrawer}/>
                 </div>}
